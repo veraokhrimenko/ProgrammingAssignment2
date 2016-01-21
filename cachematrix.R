@@ -2,7 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## set the value of the matrix
+## get the value of the matrix
+## set the value of the solve
+## get the value of the solve
 makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
   set <- function(y) {
@@ -19,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## Checks if the solve has already been calculated. 
+## If so, gets the solve from the cache, otherwise calculates the solve of the data and sets the value cache.
 cacheSolve <- function(x, ...) {
   s <- x$getinverse()
   if(!is.null(s)) {
